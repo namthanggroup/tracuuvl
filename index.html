@@ -5,10 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tra cứu hợp đồng - Vĩnh Long</title>
   <style>
-    body {
-      margin: 0;
-      padding: 20px;
-      height: 100vh;
+    body { 
+      margin: 0; padding: 20px; height: 100vh;
       background: linear-gradient(135deg, #d9fdd3, #f9f9f9);
       font-family: 'Arial', sans-serif;
       display: flex;
@@ -19,7 +17,7 @@
     }
 
     .logo {
-      width: 120px;
+      width: 60px;
       height: auto;
       margin-bottom: 20px;
       animation: fadeInDown 1s ease forwards;
@@ -41,7 +39,7 @@
     }
 
     .button {
-      background-color: #219150;
+      background-color: #7CFC00;
       color: white;
       padding: 16px 24px;
       font-size: 20px;
@@ -59,7 +57,6 @@
       transform: scale(1.05);
     }
 
-    /* Animation cho đẹp nhẹ nhàng */
     @keyframes fadeInDown {
       0% { opacity: 0; transform: translateY(-30px); }
       100% { opacity: 1; transform: translateY(0); }
@@ -75,6 +72,11 @@
       100% { opacity: 1; transform: translateY(0); }
     }
   </style>
+  <script>
+    function goToApp() {
+      window.location.href = "https://www.appsheet.com/start/5623a3f7-9223-444c-8f39-0a1abff699a0";
+    }
+  </script>
 </head>
 <body>
 
@@ -82,15 +84,13 @@
   <img src="logo.png" alt="Logo Nam Thắng" class="logo">
 
   <!-- Tiêu đề -->
-  <h1>Tra cứu hợp đồng - Vĩnh Long</h1>
+  <h2>Tra cứu hợp đồng - Vĩnh Long</h2>
 
   <!-- Thông báo -->
   <div class="message">Hãy bấm vào nút "Truy cập Ứng dụng" bên dưới để tiếp tục.</div>
 
   <!-- Nút truy cập -->
-  <a href="https://www.appsheet.com/start/5623a3f7-9223-444c-8f39-0a1abff699a0" class="button" target="_blank">
-    Truy cập App tra cứu hợp đồng - VL
-  </a>
+  <button class="button" onclick="goToApp()">Truy cập Ứng dụng</button>
 
 </body>
 </html>
